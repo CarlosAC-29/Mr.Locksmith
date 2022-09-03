@@ -1,0 +1,40 @@
+@import '../../variables.scss';
+
+.container {
+    display: flex;
+    padding: 0 50px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+
+img{
+    margin: 15px;
+}
+
+button {
+    margin: 0 20px;
+    text-decoration: none;
+    border: none;
+    font-size: 14px;
+    font-family: $Roboto;
+    color: $secondary;
+    width: 6em;
+    height: 2em;
+    text-align: center;
+    border-radius: 30px;
+    background-color: $primary;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: $secondary;
+    color: $primary;
+    transition: 0.2s;
+}
+
+.menu {
+    margin-right: 100px;
+}
