@@ -1,40 +1,132 @@
 @import '../../variables.scss';
 
-.container {
-    display: flex;
-    padding: 0 50px;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(235, 235, 235);
+.navbar {
+    height: 72px;
+    background-color: $primary;
+    color: $secondary;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 1px 5px rgb(169, 169, 169);
+
+    &__content {
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0 16px;
+
+        @include breakpoint(md) {
+            padding: 0 32px;
+        }
+
+        transition: 0.3s ease padding;
+        height: 100%;
+        display: flex;
+        align-items: center;
+
+        &>div {
+            flex: 1;
+            white-space: nowrap;
+
+            &:nth-child(2) {
+                display: flex;
+                justify-content: end;
+                height: 100%;
+            }
+
+            &:last-of-type {
+                flex: 0;
+                display: flex;
+            }
+
+        }
+    }
+
+    &__button__container {
+        display: none;
+
+        @include breakpoint(md) {
+            display: initial;
+        }
+    }
+
+    &__toggler {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: inherit;
+        cursor: pointer;
+        font-size: 32px;
+
+        @include breakpoint (md) {
+            display: none;
+        }
+    }
+
+    & > svg {
+        display: block;
+        font-size: 40px;
+    }
 }
 
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 72px;
+    right: -100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 16px 0;
+    align-content: center;
+    gap: 30px;
 
-img{
-    margin: 15px;
+
+    &--open {
+        transition: 0.2s ease right;
+        right: 0;
+    }
+
+    @include breakpoint(md) {
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: inherit;
+        padding: 0;
+        width: auto;
+    }
+
+    .navbar__button__container {
+        @include breakpoint (md) {
+            display: none;
+        }
+
+        padding: 5px;
+    }
 }
 
-button {
-    margin: 0 20px;
+.btn__page {
+    display: block;
+    width: 100%;
+    padding: 16px;
     text-decoration: none;
     border: none;
     font-size: 14px;
     font-family: $Roboto;
-    color: $secondary;
-    width: 6em;
-    height: 2em;
-    text-align: center;
-    border-radius: 30px;
-    background-color: $primary;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: $secondary;
+    background-color: rgb(0, 0, 0, 0);
     color: $primary;
-    transition: 0.2s;
-}
+    transition: 0.2 ease color;
 
-.menu {
-    margin-right: 100px;
+    &:hover {
+        background-color: $secondary;
+    }
+
+    @include breakpoint(md) {
+        width: 100px;
+        color: $secondary;
+
+        &:hover {
+            color: $primary;
+            border-radius: 30px;
+
+        }
+    }
+
 }

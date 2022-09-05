@@ -1,9 +1,10 @@
 import React from 'react'
-import NavBar from '../components/NavBar.jsx';
+import './styles/Home.scss';
+
 export default function Home() {
   return (
-    <div>
-      <NavBar />
+    <div className='page'>
+      Home
     </div>
   )
 }

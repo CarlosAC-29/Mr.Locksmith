@@ -1,7 +1,8 @@
 import React from 'react'
+import './styles/Services.scss'
 
 export default function Services() {
   return (
-    <div>Services</div>
+    <div className='page'>Services</div>
   )
 }

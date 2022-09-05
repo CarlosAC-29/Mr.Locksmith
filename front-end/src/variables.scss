@@ -8,6 +8,7 @@
     $primary: #fff;
     $secondary: #3E168E;
 
+
 @mixin flex($justify, $align, $direction){
     display: flex;
     justify-content: $justify;

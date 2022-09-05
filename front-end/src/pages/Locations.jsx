@@ -1,7 +1,8 @@
 import React from 'react'
+import './styles/Locations.scss';
 
 export default function Locations() {
   return (
-    <div>Locations</div>
+    <div className='page'>Locations</div>
   )
 }
