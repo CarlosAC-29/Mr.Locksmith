@@ -1,0 +1,56 @@
+@import '../../variables.scss';
+
+body{
+    font-family: $Roboto;
+}
+
+footer{
+    background-color: $secondary;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 16rem;
+
+    img{
+        width: 50px;
+        margin: 0.5rem;
+    }
+    
+    ul{
+        list-style: none;
+    }
+
+    .one{
+        text-align: center;
+        justify-content: center;
+        margin: 4rem 7rem 0rem;
+    }
+    
+    .two{
+        margin: 2rem 12rem 0rem;
+        align-self: center;
+    }
+    
+    hr{
+        height: 0.2px;
+        background-color: #E5E5E5;
+        width: 80%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        place-self: center;
+        align-self: start;
+    }
+
+    .copy{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        place-self: center;
+        align-self: start;
+        color: white;
+    }
+}
+
+
+
+
+
