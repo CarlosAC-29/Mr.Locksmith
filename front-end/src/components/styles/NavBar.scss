@@ -147,6 +147,10 @@
             background-color: $secondary;
             color: $primary;
             border-radius: 30px;
+
+            &:hover{
+                background-color: #5418CB;
+            }
         }
 
         &:hover {
