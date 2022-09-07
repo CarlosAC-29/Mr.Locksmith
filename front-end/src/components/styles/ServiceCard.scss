@@ -1,0 +1,55 @@
+@import '../../variables.scss';
+
+.card {
+    background-color: $primary;
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 13px 10px 30px 1px rgba(161,161,161,1);
+    transition: all .2s ease-in-out;
+    position: relative;
+    cursor: pointer;
+    color: $fontColor;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    .info {
+        margin: 50px 0;
+    }
+
+    &__title {
+        margin: 10px;
+    }
+
+    &__info {
+        margin: 0 10px;
+        font-size: 15px;
+        padding: 1px;
+        
+    }
+
+    &__icon {
+        position: absolute;
+        top: -40px;
+        left: 115px;
+        justify-content: center;
+        border-radius: 70px;
+        width: 70px;
+        height: 70px;
+        background-color: $secondary;
+        color: $primary;
+        font-size: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+}
+

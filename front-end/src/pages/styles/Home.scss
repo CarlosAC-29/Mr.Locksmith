@@ -1,4 +1,138 @@
+@import '../../variables.scss';
 
-.page{
-    padding-top: 100px;
+* {
+    padding-top: 0;
+    margin: 0;
+}
+
+.page {
+    //Landing section
+    .landing__section {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        top: 32px;
+
+        .landing__text {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
+            background-color: rgba(54, 40, 81, 0.8);
+            font-weight: 400;
+            
+
+            h1 {
+                color: $primary;
+                font-size: 50px;
+                margin: 80px 20px;
+            }
+        }
+
+        img {
+            position: relative;
+            width: 100%;
+            // transform: translateX(-220px);
+        }
+    }
+
+    //Services section
+    .services__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 10px;
+
+        h1 {
+            color: $fontColor;
+            font-size: 40px;
+        }
+
+        .service__buttons {
+            margin: 90px 0px;
+
+            .service__line1{
+                display: flex;
+                gap: 70px;
+            }
+
+            .service__line2{
+                margin: 50px 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 70px;
+            }
+        }
+    }
+
+    .callnow__section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 300px;
+        padding: 80px;
+
+        p{
+            font-size: 4rem;
+            font-weight: 600;
+        }
+
+        button {
+            padding: 1.3em 3em;
+            font-size: 2.5rem;
+            width: 12em;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: $primary;
+            background-color: $secondary;
+            border: none;
+            border-radius: 90px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+
+            &:hover {
+                background-color: #5418CB;
+                box-shadow: 0px 15px 20px rgb(62, 22, 160);
+                color: #fff;
+                transform: translateY(-7px);
+              }
+        }
+    }
+
+}
+
+//Button landing section
+.btn__callnow {
+    margin-top: 10px;
+    border-radius: 25px;
+    padding: 1em 2em;
+    background: linear-gradient(117deg, rgb(62, 22, 142), rgb(62, 22, 100));
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: box-shadow 0.25s ease 0s;
+    transition: all .2s ease-in-out;
+    letter-spacing: 0.08rem;
+    white-space: initial;
+
+    span {
+        font-weight: 500;
+        font-size: 2.5rem;
+    }
+
+    &:hover {
+        background: linear-gradient(117deg, rgb(62, 22, 160), rgb(62, 22, 130));
+        box-shadow: 0 0.1rem 0.8rem rgb(62, 22, 130);
+        transform: scale(1.1);
+    }
+
 }

@@ -1,12 +1,28 @@
 @import '../../variables.scss';
 
+
 .navbar {
     height: 72px;
     background-color: $primary;
     color: $secondary;
-    position: fixed;
     width: 100%;
     box-shadow: 0 1px 5px rgb(169, 169, 169);
+
+    img {
+        width: 300px;
+
+        @include media (tablet) {
+            width: 250px;
+        }
+
+        @include media (sm) {
+            width: 250px;
+        }
+
+        @include media (xs) {
+            width: 200px;
+        }
+    }
 
     &__content {
         max-width: 1920px;
@@ -23,11 +39,11 @@
         align-items: center;
 
         &>div {
+            display: flex;
             flex: 1;
             white-space: nowrap;
 
             &:nth-child(2) {
-                display: flex;
                 justify-content: end;
                 height: 100%;
             }
@@ -73,10 +89,11 @@
     position: fixed;
     top: 72px;
     right: -100%;
-    background-color: rgb(0, 0, 0, 0.8);
+    background-color: #272727;
     padding: 16px 0;
     align-content: center;
     gap: 30px;
+    height: 100%;
 
 
     &--open {
@@ -105,22 +122,32 @@
 .btn__page {
     display: block;
     width: 100%;
-    padding: 16px;
+    padding: 40px;
     text-decoration: none;
     border: none;
-    font-size: 14px;
-    font-family: $Roboto;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
     background-color: rgb(0, 0, 0, 0);
     color: $primary;
-    transition: 0.2 ease color;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
 
     &:hover {
         background-color: $secondary;
     }
 
     @include breakpoint(md) {
+        border-radius: 30px;
+        padding: 10px;
         width: 100px;
         color: $secondary;
+        font-size: 14px;
+        
+        &:first-child{
+            background-color: $secondary;
+            color: $primary;
+            border-radius: 30px;
+        }
 
         &:hover {
             color: $primary;
