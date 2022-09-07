@@ -1,0 +1,24 @@
+@import '../../variables.scss';
+
+.Image__Frame {
+    margin: 100px;
+    transform: scale(1.1);
+}
+
+.Image__Frame__Background {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: #EDECEC;
+    transform: rotate(25deg);
+}
+
+.Image__Frame__container {
+    position: relative;
+    .Image {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+

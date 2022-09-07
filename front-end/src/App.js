@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Services from './pages/Services.jsx';
 import Locations from './pages/Locations.jsx';
 import ContactUs from './pages/ContactUs.jsx';
+import NotFound from './pages/NotFound.jsx';
 import Navbar from './components/NavBar';
 import './App.scss';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path='/services' element={<Services />} />
           <Route path='/locations' element={<Locations />} />
           <Route path='/contact-us' element={<ContactUs />} />
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </div>

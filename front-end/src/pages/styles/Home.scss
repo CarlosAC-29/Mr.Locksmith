@@ -9,6 +9,7 @@
     //Landing section
     .landing__section {
         display: flex;
+        justify-content: center;
         align-items: center;
         width: 100%;
         top: 32px;
@@ -28,7 +29,7 @@
             h1 {
                 color: $primary;
                 font-size: 50px;
-                margin: 80px 20px;
+                margin: 40px 20px;
             }
         }
 
@@ -111,7 +112,6 @@
 
 //Button landing section
 .btn__callnow {
-    margin-top: 10px;
     border-radius: 25px;
     padding: 1em 2em;
     background: linear-gradient(117deg, rgb(62, 22, 142), rgb(62, 22, 100));
