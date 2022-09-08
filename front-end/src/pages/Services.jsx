@@ -14,8 +14,10 @@ export default function Services() {
 				<p>We will always be ready to provide you with the best service</p>
 			</div>
 			<div className='Services__section'>
-				<div className='Service'>
-					<ImageFrame Image={automotiveImage} />
+				<div className='Service-left'>
+					<div className='Service__image'>
+						<ImageFrame Image={automotiveImage} />
+					</div>
 					<div className='Service__details'>
 						<p className='Service__title'>Automotive</p>
 						<p className='Service__description'>
@@ -38,7 +40,10 @@ export default function Services() {
 						</ul>
 					</div>
 				</div>
-				<div className='Service'>
+				<div className='Service-right'>
+				<div className='Service__image'>
+						<ImageFrame Image={residentialImage} />
+					</div>
 					<div className='Service__details'>
 						<p className='Service__title'>Residential</p>
 						<p className='Service__description'>
@@ -63,10 +68,11 @@ export default function Services() {
 							</li>
 						</ul>
 					</div>
-					<ImageFrame Image={residentialImage} />
 				</div>
-				<div className='Service'>
-					<ImageFrame Image={commercialImage} />
+				<div className='Service-left'>
+					<div className='Service__image'>
+						<ImageFrame Image={commercialImage} />
+					</div>
 					<div className='Service__details'>
 						<p className='Service__title'>Commercial</p>
 						<p className='Service__description'>
@@ -92,7 +98,10 @@ export default function Services() {
 						</ul>
 					</div>
 				</div>
-				<div className='Service'>
+				<div className='Service-right'>
+				<div className='Service__image'>
+						<ImageFrame Image={emergencyImage} />
+					</div>
 					<div className='Service__details'>
 						<p className='Service__title'>Emergency</p>
 						<p className='Service__description'>
@@ -117,10 +126,11 @@ export default function Services() {
 							</li>
 						</ul>
 					</div>
-					<ImageFrame Image={emergencyImage} />
 				</div>
-				<div className='Service'>
-					<ImageFrame Image={safeImage} />
+				<div className='Service-left'>
+					<div className='Service__image'>
+						<ImageFrame Image={safeImage} />
+					</div>
 					<div className='Service__details'>
 						<p className='Service__title'>Safe</p>
 						<p className='Service__description'>
