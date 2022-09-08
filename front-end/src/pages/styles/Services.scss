@@ -1,0 +1,52 @@
+@import '../../variables.scss';
+
+.Services__greetings {
+    background-color: $secondary;
+    color: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 110px 0; 
+    p{
+        font-size: 2.8rem;
+        text-align: center;
+        max-width: 890px;
+        font-weight: lighter;
+    }
+}
+
+.Service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 100px;
+
+    .Service__details {
+        
+        .Service__title{
+            color: $secondary;
+            font-size: 2.6rem;
+            font-weight: 600;          
+        }
+
+        .Service__description{
+            max-width: 600px;
+            font-size: 19px;
+            font-weight: lighter;
+        }
+
+        .Service__subtitle {
+            padding: 15px 0;
+            font-size: 1.4rem;
+            color: $secondary;
+            font-weight: 600;
+        }
+
+        ul{
+            padding: 0 40px;
+            font-size: 19px;
+            font-weight: lighter;
+        }
+    }
+}

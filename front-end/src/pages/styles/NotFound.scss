@@ -1,0 +1,13 @@
+@import '../../variables.scss';
+
+.NotFound{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    .message {
+        padding: 100px;
+        font-size: 4rem;
+    }
+}
