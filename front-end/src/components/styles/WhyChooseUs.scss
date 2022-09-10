@@ -19,6 +19,7 @@
 
         .text {
             margin-top: 8rem;
+            margin-right: 2rem;
             display: flex;
             color: #2C2A2A;
             @include media('<=phone'){
@@ -134,6 +135,7 @@
 
         .text {
             margin-top: 8rem;
+            margin-right: 2rem;
             display: flex;
             color: #2C2A2A;
             @include media('<=phone'){
@@ -178,7 +180,7 @@
             -webkit-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
             -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
             box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
-            transform: translateX(13px);
+            transform:translate(13px,-120px);
             @include media('<=desktop'){
                 height: 400px;
             }
