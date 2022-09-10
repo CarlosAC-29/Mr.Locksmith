@@ -1,0 +1,187 @@
+@import '../../variables.scss';
+@import '../../media';
+
+.all {
+    background-color: #E2DDED;
+    overflow-x: hidden;
+
+    .title {
+        text-align: center;
+        padding: 2rem;
+        font-size: 20px;
+    }
+
+    .one {
+        display: flex;
+        @include media('<=phone'){
+            display: inline;
+        }
+
+        .text {
+            margin-top: 8rem;
+            display: flex;
+            color: #2C2A2A;
+            @include media('<=phone'){
+                margin-top: 1rem;
+                align-content: center;
+                justify-content: center;
+            }
+
+            .number {
+                margin-left: 8rem;
+                background-color: #3E168E;
+                min-width: 60px;
+                height: 60px;
+                text-align: center;
+                align-content: center;
+                transform: translateY(8px);
+                @include media('<=desktop'){
+                    margin-left: 5rem;
+                }
+                @include media('<=phone'){
+                    margin-left: 1rem;
+                }
+
+                h1 {
+                    color: white;
+                    font-size: 40px;
+                }
+            }
+
+            p {
+                font-size: 30px;
+                margin-left: 2rem;
+                @include media('<=desktop'){
+                    font-size: 20px;
+                }
+            }
+        }
+
+        img {
+            height: 500px;
+            border: 13px solid white;
+            -webkit-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+            -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+            box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+            transform: translateX(100px);
+            @include media('<=desktop'){
+                height: 400px;
+            }
+        }
+    }
+
+    .two{
+        display: flex;
+        @include media('<=phone'){
+            display: inline;
+        }
+
+        .text {
+            margin-top: 8rem;
+            display: flex;
+            color: #2C2A2A;
+            @include media('<=phone'){
+                margin-top: 1rem;
+                align-content: center;
+                justify-content: center;
+            }
+
+            .number {
+                background-color: #3E168E;
+                min-width: 60px;
+                height: 60px;
+                text-align: center;
+                align-content: center;
+                transform: translateY(8px);
+
+                h1 {
+                    color: white;
+                    font-size: 40px;
+                }
+            }
+
+            p {
+                font-size: 30px;
+                margin-left: 2rem;
+                margin-right: 8rem;
+                @include media('<=desktop'){
+                    font-size: 20px;
+                    margin-right: 5rem;
+                }
+            }
+        }
+
+        img {
+            height: 600px;
+            border: 13px solid white;
+            -webkit-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+            -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+            box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+            transform:translate(-100px,-100px);
+            @include media('<=desktop'){
+                height: 500px;
+                transform:translate(-100px,-65px);
+            }
+        }
+    }
+
+    .three {
+        margin-bottom: 4rem;
+        display: flex;
+        @include media('<=phone'){
+            display: inline;
+        }
+
+        .text {
+            margin-top: 8rem;
+            display: flex;
+            color: #2C2A2A;
+            @include media('<=phone'){
+                margin-top: 1rem;
+                align-content: center;
+                justify-content: center;
+            }
+
+            .number {
+                margin-left: 8rem;
+                background-color: #3E168E;
+                min-width: 60px;
+                height: 60px;
+                text-align: center;
+                align-content: center;
+                transform: translateY(8px);
+                @include media('<=desktop'){
+                    margin-left: 5rem;
+                }
+                @include media('<=phone'){
+                    margin-left: 1rem;
+                }
+
+                h1 {
+                    color: white;
+                    font-size: 40px;
+                }
+            }
+
+            p {
+                font-size: 30px;
+                margin-left: 2rem;
+                @include media('<=desktop'){
+                    font-size: 20px;
+                }
+            }
+        }
+
+        img {
+            height: 500px;
+            border: 13px solid white;
+            -webkit-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+            -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+            box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+            transform: translateX(13px);
+            @include media('<=desktop'){
+                height: 400px;
+            }
+        }
+    }
+}

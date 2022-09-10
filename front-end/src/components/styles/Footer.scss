@@ -1,4 +1,5 @@
 @import '../../variables.scss';
+@import '../../media';
 
 footer{
     background-color: $secondary;
@@ -6,6 +7,22 @@ footer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 16rem;
+    @include media('<=tablet'){
+        height: 37rem;
+        display: inline-block;
+        width: 100%;
+    }
+    @include media('<=desktop'){
+        width: 100%;
+    }
+    @include media('<=media'){
+        height: 22rem;
+        width: 100%;
+    }
+    @include media('<=phone'){
+        height: 25rem;
+        width: 100%;
+    }
 
     img{
         width: 50px;
@@ -19,30 +36,46 @@ footer{
     .one{
         text-align: center;
         justify-content: center;
-        margin: 4rem 7rem 0rem;
+        place-self: center;
+        @include media('<=tablet'){
+            margin: 1rem;
+        }
     }
     
     .two{
-        margin: 2rem 12rem 0rem;
         align-self: center;
+        place-self: center;
+        @include media('<=tablet'){
+            text-align: center;
+            margin: 1rem;
+        }
     }
     
     hr{
         height: 0.2px;
         background-color: #E5E5E5;
-        width: 80%;
+        width: 100%;
         grid-column-start: 1;
         grid-column-end: 3;
         place-self: center;
-        align-self: start;
+        @include media('<=desktop'){
+            width: 100%;
+            margin-top: 1rem;
+        }
     }
 
     .copy{
         grid-column-start: 1;
         grid-column-end: 3;
         place-self: center;
-        align-self: start;
+        text-align: center;
         color: white;
+        @include media('<=tablet'){
+            text-align: center;
+        }
+        @include media('<=desktop'){
+            text-align: center;
+        }
     }
 }
 

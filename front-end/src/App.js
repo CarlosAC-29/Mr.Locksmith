@@ -1,6 +1,4 @@
-import Home from "./pages/Home";
 import Footer from "./components/Footer";
-
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Services from './pages/Services.jsx';
@@ -13,7 +11,6 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <Footer />
       <BrowserRouter>
       <Navbar />
         <Routes>
@@ -24,6 +21,7 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </div>
   );
 }

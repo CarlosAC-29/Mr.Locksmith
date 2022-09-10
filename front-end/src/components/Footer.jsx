@@ -30,8 +30,8 @@ const Footer = () => {
                     <li><BsTelephoneFill /> 801-819-1031</li>
                 </ul>
             </div>
-            <hr/>
             <div className="copy">
+            <hr/>
             <p>© Copyright 2022· Mr.Locksmith All rights reserved </p>
             </div>
         </footer>
