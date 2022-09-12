@@ -58,6 +58,11 @@ export default function Home() {
 			<div className='callnow__section'>
 				<p>We operate 7 days <br/> a week for any <br/> emergency</p>
 				<button> Call now</button>
+				<div className='circle'></div>
+				<div className='circle_1'></div>
+				<div className='circle_2'></div>
+				<div className='circle_3'></div>
+				<div className='circle_4'></div>
 			</div>
 		</div>
 	)
