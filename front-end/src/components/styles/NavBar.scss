@@ -1,15 +1,15 @@
 @import '../../variables.scss';
 @import '../../media.scss';
 
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 75px;
+    position: relative;
+    margin-left: 20px;
 
     &__logo {
-        margin-left: 20px;
         @include media('<=tablet'){
             width: 250px;
             height: 50px;
@@ -27,21 +27,32 @@
             display: none;
         }
 
+        .btn__page.active {
+            background-color: $secondary;
+            color: #fff;
+          }
+
         .btn__page {
             text-decoration: none;
             border: none;
             background-color: #fff;
             color: $secondary;
             font-size: 17px;
+            padding: 10px 20px; 
             cursor: pointer;
             border-radius: 30px;
-            padding: 10px 20px;
             margin: 0 10px;
             transition: all 0.2s ease-in;
+
+            
 
             &:hover{
                 background-color: $secondary;
                 color: $primary;
+
+                a{
+                    color: $primary;
+                }
             }
             
 
@@ -106,4 +117,7 @@
             font-size: 32px;
         }
     }
+    
 }
+
+  
