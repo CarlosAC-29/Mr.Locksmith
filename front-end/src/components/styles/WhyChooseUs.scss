@@ -1,188 +1,257 @@
 @import '../../variables.scss';
 @import '../../media';
 
-.all {
-    background-color: #E2DDED;
-    overflow-x: hidden;
+.container {
+    position: relative;
 
     .title {
+        position: absolute;
+        background-color: #CEC4E2;
         text-align: center;
-        padding: 2rem;
-        font-size: 20px;
-    }
+        font-size: 25px;
+        width: 60%;
+        left: 20%;
+        transform: translateY(-40px);
+        z-index: 100;
+        color: #603091;
 
-    .one {
-        display: flex;
-        @include media('<=phone'){
-            display: inline;
-        }
-
-        .text {
-            margin-top: 8rem;
-            margin-right: 2rem;
-            display: flex;
-            color: #2C2A2A;
-            @include media('<=phone'){
-                margin-top: 1rem;
-                align-content: center;
-                justify-content: center;
-            }
-
-            .number {
-                margin-left: 8rem;
-                background-color: #3E168E;
-                min-width: 60px;
-                height: 60px;
-                text-align: center;
-                align-content: center;
-                transform: translateY(8px);
-                @include media('<=desktop'){
-                    margin-left: 5rem;
-                }
-                @include media('<=phone'){
-                    margin-left: 1rem;
-                }
-
-                h1 {
-                    color: white;
-                    font-size: 40px;
-                }
-            }
-
-            p {
-                font-size: 30px;
-                margin-left: 2rem;
-                @include media('<=desktop'){
-                    font-size: 20px;
-                }
-            }
-        }
-
-        img {
-            height: 500px;
-            border: 13px solid white;
-            -webkit-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
-            -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
-            box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
-            transform: translateX(100px);
-            @include media('<=desktop'){
-                height: 400px;
-            }
+        @include media('<=phone') {
+            font-size: 15px;
         }
     }
 
-    .two{
-        display: flex;
-        @include media('<=phone'){
-            display: inline;
-        }
+    .all {
+        background-color: #F4ECFC;
+        position: absolute;
 
-        .text {
-            margin-top: 8rem;
+        .one {
+            margin-top: 5rem;
             display: flex;
-            color: #2C2A2A;
-            @include media('<=phone'){
-                margin-top: 1rem;
-                align-content: center;
-                justify-content: center;
+
+            @include media('<=phone') {
+                display: inline;
             }
 
-            .number {
-                background-color: #3E168E;
-                min-width: 60px;
-                height: 60px;
-                text-align: center;
-                align-content: center;
-                transform: translateY(8px);
+            .text {
+                margin-top: 8rem;
+                margin-right: 2rem;
+                display: flex;
+                color: #2C2A2A;
 
-                h1 {
-                    color: white;
-                    font-size: 40px;
+                @include media('<=phone') {
+                    margin-top: 7rem;
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                .number {
+                    margin-left: 8rem;
+                    background-color: #F9C64D;
+                    min-width: 60px;
+                    height: 60px;
+                    text-align: center;
+                    align-content: center;
+                    transform: translateY(8px);
+
+                    h1 {
+                        color: #2C004B;
+                        font-size: 40px;
+                        @include media('<=phone') {
+                            font-size: 28px;
+                        }
+                    }
+
+                    @include media('<=phone') {
+                        margin-left: 1rem;
+                        min-width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                p {
+                    font-size: 30px;
+                    margin-left: 2rem;
+
+                    @include media('<=phone') {
+                        font-size: 19px;
+                        margin-left: 1rem;
+                    }
                 }
             }
 
-            p {
-                font-size: 30px;
-                margin-left: 2rem;
-                margin-right: 8rem;
-                @include media('<=desktop'){
-                    font-size: 20px;
-                    margin-right: 5rem;
+            .image{
+                @include media('<=phone') {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                }
+
+                img {
+                    margin-right: 3rem;
+                    height: 500px;
+                    border: 13px solid white;
+                    -webkit-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    @include media('<=phone') {
+                        height: 250px;
+                        margin-right: 0px;
+                    }
                 }
             }
+
         }
 
-        img {
-            height: 600px;
-            border: 13px solid white;
-            -webkit-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
-            -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
-            box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
-            transform:translate(-100px,-100px);
-            @include media('<=desktop'){
-                height: 500px;
-                transform:translate(-100px,-65px);
-            }
-        }
-    }
-
-    .three {
-        margin-bottom: 4rem;
-        display: flex;
-        @include media('<=phone'){
-            display: inline;
-        }
-
-        .text {
-            margin-top: 8rem;
-            margin-right: 2rem;
+        .two {
             display: flex;
-            color: #2C2A2A;
-            @include media('<=phone'){
-                margin-top: 1rem;
-                align-content: center;
-                justify-content: center;
+
+            @include media('<=phone') {
+                display: inline;
             }
 
-            .number {
-                margin-left: 8rem;
-                background-color: #3E168E;
-                min-width: 60px;
-                height: 60px;
-                text-align: center;
-                align-content: center;
-                transform: translateY(8px);
-                @include media('<=desktop'){
-                    margin-left: 5rem;
-                }
-                @include media('<=phone'){
-                    margin-left: 1rem;
+            .text {
+                margin-top: 8rem;
+                display: flex;
+                color: #2C2A2A;
+                @include media('<=phone') {
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
                 }
 
-                h1 {
-                    color: white;
-                    font-size: 40px;
+                .number {
+                    margin-left: 6rem;
+                    background-color: #F9C64D;
+                    min-width: 60px;
+                    height: 60px;
+                    text-align: center;
+                    align-content: center;
+                    transform: translateY(8px);
+
+                    h1 {
+                        color: #2C004B;
+                        font-size: 40px;
+                        @include media('<=phone') {
+                            font-size: 28px;
+                        }
+                    }
+
+                    @include media('<=phone') {
+                        margin-left: 1rem;
+                        min-width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                p {
+                    font-size: 30px;
+                    margin-left: 2rem;
+                    margin-right: 8rem;
+                    @include media('<=phone') {
+                        font-size: 19px;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                    }
                 }
             }
 
-            p {
-                font-size: 30px;
-                margin-left: 2rem;
-                @include media('<=desktop'){
-                    font-size: 20px;
+            .image{
+                @include media('<=phone') {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                }
+
+                img {
+                    margin-left: 3rem;
+                    height: 600px;
+                    border: 13px solid white;
+                    -webkit-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    transform: translateY(-100px);
+                    @include media('<=phone') {
+                        height: 250px;
+                        transform: translateY(0px);
+                        margin-left: 0px;
+                        margin-top: 3rem;
+                    }
                 }
             }
         }
 
-        img {
-            height: 500px;
-            border: 13px solid white;
-            -webkit-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
-            -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
-            box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
-            transform:translate(13px,-120px);
-            @include media('<=desktop'){
-                height: 400px;
+        .three {
+            margin-bottom: 4rem;
+            display: flex;
+
+            @include media('<=phone') {
+                display: inline;
+            }
+
+            .text {
+                margin-top: 8rem;
+                margin-right: 2rem;
+                display: flex;
+                color: #2C2A2A;
+                @include media('<=phone') {
+                    margin-top: 3rem;
+                    margin-bottom: 1rem;
+                }
+
+                .number {
+                    margin-left: 8rem;
+                    background-color: #F9C64D;
+                    min-width: 60px;
+                    height: 60px;
+                    text-align: center;
+                    align-content: center;
+                    transform: translateY(8px);
+
+                    h1 {
+                        color: #2C004B;
+                        font-size: 40px;
+                        @include media('<=phone') {
+                            font-size: 28px;
+                        }
+                    }
+
+                    @include media('<=phone') {
+                        margin-left: 1rem;
+                        min-width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                p {
+                    font-size: 30px;
+                    margin-left: 2rem;
+                    @include media('<=phone') {
+                        font-size: 19px;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+
+            .image{
+                @include media('<=phone') {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                }
+
+                img {
+                    margin-right: 3rem;
+                    height: 500px;
+                    border: 13px solid white;
+                    -webkit-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    transform: translateY(-100px);
+                    @include media('<=phone') {
+                        height: 250px;
+                        margin-right: 0px;
+                        transform: translateY(0px);
+                    }
+                }
             }
         }
     }

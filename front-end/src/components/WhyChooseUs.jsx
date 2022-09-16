@@ -5,10 +5,11 @@ import './styles/WhyChooseUs.scss';
 
 const WhyChooseUs = () => {
     return (
-        <div className="all">
+        <div className="container">
             <div className="title">
                 <h1>Why choose us?</h1>
             </div>
+            <div className="all">
             <div className="one">
                 <div className="text">
                     <div className="number">
@@ -56,6 +57,7 @@ const WhyChooseUs = () => {
                     <img src={Person} alt="house" />
                 </div>
             </div>
+        </div>
         </div>
     )
 }
