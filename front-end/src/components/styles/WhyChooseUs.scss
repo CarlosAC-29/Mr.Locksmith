@@ -22,7 +22,10 @@
 
     .all {
         background-color: #F4ECFC;
-        position: absolute;
+        padding: 2rem 0rem;
+        @include media('<=phone') {
+            padding: 4rem 0rem;
+        }
 
         .one {
             margin-top: 5rem;
@@ -39,7 +42,7 @@
                 color: #2C2A2A;
 
                 @include media('<=phone') {
-                    margin-top: 7rem;
+                    margin-top: 1rem;
                     margin-right: 1rem;
                     margin-bottom: 1rem;
                 }
@@ -106,7 +109,8 @@
             display: flex;
 
             @include media('<=phone') {
-                display: inline;
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
             }
 
             .text {
