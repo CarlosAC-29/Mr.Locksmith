@@ -1,2 +1,84 @@
 @import '../../variables.scss';
+@import '../../media.scss';
 
+.allC {
+    @include flex(center, center, row);
+    padding: 3rem 0rem;
+    width: 100%;
+    background-color: #E2DDED;
+
+    .row {
+        display: flex;
+
+        @include media('<=tablet') {
+            display: inline;
+            min-width: 250px;
+        }
+
+        iframe {
+            @include media('<=tablet') {
+                width: 320px;
+            }
+
+            @include media('<=desktop') {
+                width: 600px;
+            }
+
+            @include media('<=phone') {
+                margin-left: 0.4rem;
+                width: 360px;
+            }
+        }
+
+        .cityBorder {
+
+            margin-right: 2rem;
+
+            .icon {
+                color: #3E168E;
+            }
+
+            .title {
+                margin-bottom: 1em;
+                text-align: center;
+                color: #2C2A2A;
+                @include media('<=phone') {
+                    margin-left: 1.2rem;
+                }
+            }
+
+            .cityButtons {
+
+                @include media('<=phone') {
+                    margin-left: 1.2rem;
+                }
+
+                button {
+                    background-color: #3E168E;
+                    color: white;
+                    border: none;
+                    text-align: center;
+                    display: inline-block;
+                    cursor: pointer;
+                    border-radius: 20px;
+                    margin: 1em;
+                    width: 140px;
+                    height: 40px;
+
+                    &:hover {
+                        background-color: white;
+                        color: #3E168E;
+                    }
+                }
+
+                ul {
+                    list-style: none;
+                    @include media('<=phone') {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}
