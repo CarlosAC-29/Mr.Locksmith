@@ -1,3 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//variables
+$secondary: #3E168E;
+
+//Functions
+@mixin flex($justify, $align, $direction) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+}
+
+//font
+body{
+	font-family: 'Roboto', sans-serif;;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 

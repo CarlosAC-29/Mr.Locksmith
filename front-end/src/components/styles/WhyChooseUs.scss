@@ -1,0 +1,262 @@
+@import '../../variables.scss';
+@import '../../media';
+
+.container {
+    position: relative;
+
+    .title {
+        position: absolute;
+        background-color: #CEC4E2;
+        text-align: center;
+        font-size: 25px;
+        width: 60%;
+        left: 20%;
+        transform: translateY(-40px);
+        z-index: 100;
+        color: #603091;
+
+        @include media('<=phone') {
+            font-size: 15px;
+        }
+    }
+
+    .all {
+        background-color: #F4ECFC;
+        padding: 2rem 0rem;
+        @include media('<=phone') {
+            padding: 4rem 0rem;
+        }
+
+        .one {
+            margin-top: 5rem;
+            display: flex;
+
+            @include media('<=phone') {
+                display: inline;
+            }
+
+            .text {
+                margin-top: 8rem;
+                margin-right: 2rem;
+                display: flex;
+                color: #2C2A2A;
+
+                @include media('<=phone') {
+                    margin-top: 1rem;
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                .number {
+                    margin-left: 8rem;
+                    background-color: #F9C64D;
+                    min-width: 60px;
+                    height: 60px;
+                    text-align: center;
+                    align-content: center;
+                    transform: translateY(8px);
+
+                    h1 {
+                        color: #2C004B;
+                        font-size: 40px;
+                        @include media('<=phone') {
+                            font-size: 28px;
+                        }
+                    }
+
+                    @include media('<=phone') {
+                        margin-left: 1rem;
+                        min-width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                p {
+                    font-size: 30px;
+                    margin-left: 2rem;
+
+                    @include media('<=phone') {
+                        font-size: 19px;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+
+            .image{
+                @include media('<=phone') {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                }
+
+                img {
+                    margin-right: 3rem;
+                    height: 500px;
+                    border: 13px solid white;
+                    -webkit-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    @include media('<=phone') {
+                        height: 250px;
+                        margin-right: 0px;
+                    }
+                }
+            }
+
+        }
+
+        .two {
+            display: flex;
+
+            @include media('<=phone') {
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+            }
+
+            .text {
+                margin-top: 8rem;
+                display: flex;
+                color: #2C2A2A;
+                @include media('<=phone') {
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                .number {
+                    margin-left: 6rem;
+                    background-color: #F9C64D;
+                    min-width: 60px;
+                    height: 60px;
+                    text-align: center;
+                    align-content: center;
+                    transform: translateY(8px);
+
+                    h1 {
+                        color: #2C004B;
+                        font-size: 40px;
+                        @include media('<=phone') {
+                            font-size: 28px;
+                        }
+                    }
+
+                    @include media('<=phone') {
+                        margin-left: 1rem;
+                        min-width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                p {
+                    font-size: 30px;
+                    margin-left: 2rem;
+                    margin-right: 8rem;
+                    @include media('<=phone') {
+                        font-size: 19px;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+
+            .image{
+                @include media('<=phone') {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                }
+
+                img {
+                    margin-left: 3rem;
+                    height: 600px;
+                    border: 13px solid white;
+                    -webkit-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    transform: translateY(-100px);
+                    @include media('<=phone') {
+                        height: 250px;
+                        transform: translateY(0px);
+                        margin-left: 0px;
+                        margin-top: 3rem;
+                    }
+                }
+            }
+        }
+
+        .three {
+            margin-bottom: 4rem;
+            display: flex;
+
+            @include media('<=phone') {
+                display: inline;
+            }
+
+            .text {
+                margin-top: 8rem;
+                margin-right: 2rem;
+                display: flex;
+                color: #2C2A2A;
+                @include media('<=phone') {
+                    margin-top: 3rem;
+                    margin-bottom: 1rem;
+                }
+
+                .number {
+                    margin-left: 8rem;
+                    background-color: #F9C64D;
+                    min-width: 60px;
+                    height: 60px;
+                    text-align: center;
+                    align-content: center;
+                    transform: translateY(8px);
+
+                    h1 {
+                        color: #2C004B;
+                        font-size: 40px;
+                        @include media('<=phone') {
+                            font-size: 28px;
+                        }
+                    }
+
+                    @include media('<=phone') {
+                        margin-left: 1rem;
+                        min-width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                p {
+                    font-size: 30px;
+                    margin-left: 2rem;
+                    @include media('<=phone') {
+                        font-size: 19px;
+                        margin-left: 1rem;
+                    }
+                }
+            }
+
+            .image{
+                @include media('<=phone') {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                }
+
+                img {
+                    margin-right: 3rem;
+                    height: 500px;
+                    border: 13px solid white;
+                    -webkit-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
+                    transform: translateY(-100px);
+                    @include media('<=phone') {
+                        height: 250px;
+                        margin-right: 0px;
+                        transform: translateY(0px);
+                    }
+                }
+            }
+        }
+    }
+}

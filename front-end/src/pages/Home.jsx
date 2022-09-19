@@ -2,6 +2,7 @@ import React from 'react'
 import './styles/Home.scss';
 import landingImage from '../images/MainPage.jpg';
 import ServiceCard from '../components/ServiceCard';
+import WhyChooseUs from '../components/WhyChooseUs';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa';
 import { AiFillAlert } from 'react-icons/ai';
@@ -55,6 +56,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+			<WhyChooseUs />
 			<div className='callnow__section'>
 				<p>We operate 7 days <br/> a week for any <br/> emergency</p>
 				<button> Call now</button>
