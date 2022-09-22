@@ -45,11 +45,11 @@
             }
         }
 
+
         button {
             padding: 1em 1em;
             font-size: 2.5rem;
             width: 12em;
-            text-transform: uppercase;
             letter-spacing: 2.5px;
             font-weight: 500;
             color: $primary;
@@ -60,6 +60,10 @@
             transition: all 0.3s ease 0s;
             cursor: pointer;
             outline: none;
+
+            span{
+                margin-left: 20px;
+            }
 
             @include media('<=tablet'){
                 width: 12em;
@@ -77,5 +81,7 @@
               }
         }
     }
+
+    
 
 }

@@ -13,7 +13,7 @@ export default function ContactUs() {
 			<div className='ContactUs__info'>
 				<p>You can contact us at any time <br />through our direct line</p>
 				<a href="tel://+801-819-1031">
-					<button><FaPhoneAlt />801-819-1031</button>
+					<button><FaPhoneAlt /><span>801-819-1031</span></button>
 				</a>
 			</div>
 		</div>

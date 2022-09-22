@@ -6,20 +6,23 @@ import Locations from './pages/Locations.jsx';
 import ContactUs from './pages/ContactUs.jsx';
 import NotFound from './pages/NotFound.jsx';
 import Navbar from './components/NavBar';
+import ScrollToTop from "./components/ScrollToTop";
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/services' element={<Services />} />
-          <Route path='/locations' element={<Locations />} />
-          <Route path='/contact-us' element={<ContactUs />} />
-          <Route path='*' element={<NotFound />} />
-        </Routes>
+        <Navbar />
+        <ScrollToTop>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/services' element={<Services />} />
+            <Route path='/locations' element={<Locations />} />
+            <Route path='/contact-us' element={<ContactUs />} />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </ScrollToTop>
       </BrowserRouter>
       <Footer />
     </div>
