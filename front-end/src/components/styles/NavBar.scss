@@ -9,6 +9,11 @@
     position: relative;
     margin-left: 20px;
 
+	@include media('<=tablet') {
+
+	}
+
+
     &__logo {
         @include media('<=tablet'){
             width: 250px;
@@ -16,6 +21,21 @@
             margin-left: 10px;
         }
     }
+
+	.btn__toggler__close{
+		display: none;
+
+		@include media('<=tablet') {
+			display: flex;
+			justify-content: flex-end;
+			padding: 0 20px;
+			font-size: 32px;
+			background-color: inherit;
+			border: none;
+			color: $primary;
+			
+		}
+	}
 
     &__links {
         display: flex;
@@ -44,8 +64,6 @@
             margin: 0 10px;
             transition: all 0.2s ease-in;
 
-            
-
             &:hover{
                 background-color: $secondary;
                 color: $primary;
@@ -73,12 +91,13 @@
         flex-direction: column;
         justify-content: flex-start;
         gap: 50px;
-        top: 75px;
+        top: 0px;
         left: 0px;
         width: 100%;
         background-color: #3E3E3E;
         text-decoration: none;
         height: 100vh;
+		position: fixed;
 
         @include media('>tablet') {
             display: none;
@@ -92,7 +111,7 @@
             font-size: 22px;
             cursor: pointer;
             padding: 10px 30px;
-            margin: 0 10px;    
+            margin: 0;    
             width: 100%;
 
             &:hover{
@@ -108,17 +127,21 @@
         @include media('<=tablet') {
             display: contents;
         }
-
-        .btn__toggler {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: none;
-            background-color: inherit;
-            cursor: pointer;
-            font-size: 32px;
-        }
     }
+
+	.btn__toggler {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		background-color: inherit;
+		cursor: pointer;
+		font-size: 32px;
+
+		@include media('<=tablet') {
+            display: contents;
+        }
+	}
     
 }
 
