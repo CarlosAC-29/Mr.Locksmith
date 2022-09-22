@@ -11,6 +11,7 @@ import { FaCar } from 'react-icons/fa';
 import { BsSafeFill } from 'react-icons/bs';
 
 export default function Home() {
+
 	return (
 		<div className='page'>
 			<div className='landing__section'>
@@ -19,7 +20,9 @@ export default function Home() {
 				</div>
 				<div className='landing__text'>
 					<h1> We have more than 20 years of experience</h1>
-					<button className='btn__callnow'><span>Call now</span><br /><FaPhoneAlt /> 801-819-1031</button>
+					<a href="tel://+801-819-1031">
+						<button className='btn__callnow'><span>Call now</span><br /><FaPhoneAlt /> 801-819-1031</button>
+					</a>
 				</div>
 			</div>
 			<div className='services__section'>
@@ -58,8 +61,10 @@ export default function Home() {
 			</div>
 			<WhyChooseUs />
 			<div className='callnow__section'>
-				<p>We operate 7 days <br/> a week for any <br/> emergency</p>
-				<button> Call now</button>
+				<p>We operate 7 days <br /> a week for any <br /> emergency</p>
+				<a href="tel://+801-819-1031">
+					<button>Call now</button>
+				</a>
 				<div className='circle'></div>
 				<div className='circle_1'></div>
 				<div className='circle_2'></div>
@@ -69,3 +74,4 @@ export default function Home() {
 		</div>
 	)
 }
+
