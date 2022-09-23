@@ -77,6 +77,12 @@
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
                     }
+                    @include media('<=tablet') {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        justify-items: center;
+                        
+                    }
                 }
             }
         }

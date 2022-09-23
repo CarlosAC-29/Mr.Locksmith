@@ -18,6 +18,10 @@
         @include media('<=phone') {
             font-size: 15px;
         }
+
+        @include media('<=tablet') {
+            font-size: 15px;
+        }
     }
 
     .all {
@@ -46,6 +50,12 @@
                     margin-right: 1rem;
                     margin-bottom: 1rem;
                 }
+                @include media('<=tablet') {
+                    margin-top: 80px;
+                }
+                @include media('>tablet', '<desktop') {
+                    margin-top: 80px;
+                }
 
                 .number {
                     margin-left: 8rem;
@@ -62,10 +72,26 @@
                         @include media('<=phone') {
                             font-size: 28px;
                         }
+                        @include media('<=tablet') {
+                            font-size: 28px;
+                        }
+                        @include media('>tablet', '<desktop') {
+                            font-size: 28px;
+                        }
                     }
 
                     @include media('<=phone') {
                         margin-left: 1rem;
+                        min-width: 40px;
+                        height: 40px;
+                    }
+                    @include media('<=tablet') {
+                        margin-left: 1.5rem;
+                        min-width: 40px;
+                        height: 40px;
+                    }
+                    @include media('>tablet', '<desktop') {
+                        margin-left: 1.5rem;
                         min-width: 40px;
                         height: 40px;
                     }
@@ -79,11 +105,27 @@
                         font-size: 19px;
                         margin-left: 1rem;
                     }
+                    @include media('<=tablet') {
+                        font-size: 19px;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                    }
+                    @include media('>tablet', '<desktop') {
+                        font-size: 19px;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                    }
                 }
             }
 
             .image{
                 @include media('<=phone') {
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                }
+
+                @include media('<=tablet') {
                     display: flex;
                     justify-content: center;
                     align-content: center;
@@ -97,8 +139,16 @@
                     -moz-box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
                     box-shadow: 0px 9px 16px -7px rgba(44, 42, 42, 0.69);
                     @include media('<=phone') {
-                        height: 250px;
-                        margin-right: 0px;
+                        height: 250px !important;
+                        margin-right: 0 !important;
+                    }
+                    @include media('<=tablet') {
+                        height: 300px;
+                        margin-right: 1.5rem;
+                    }
+                    @include media('>tablet', '<desktop') {
+                        height: 300px;
+                        margin-right: 1.5rem;
                     }
                 }
             }
@@ -113,12 +163,21 @@
                 flex-direction: column-reverse;
             }
 
+
             .text {
                 margin-top: 8rem;
                 display: flex;
                 color: #2C2A2A;
                 @include media('<=phone') {
                     margin-top: 1rem;
+                    margin-bottom: 1rem;
+                }
+                @include media('<=tablet') {
+                    margin-top: 2.3rem;
+                    margin-bottom: 1rem;
+                }
+                @include media('>tablet', '<desktop') {
+                    margin-top: 2.3rem;
                     margin-bottom: 1rem;
                 }
 
@@ -137,9 +196,25 @@
                         @include media('<=phone') {
                             font-size: 28px;
                         }
+                        @include media('<=tablet') {
+                            font-size: 28px;
+                        }
+                        @include media('>tablet', '<desktop') {
+                            font-size: 28px;
+                        }
                     }
 
                     @include media('<=phone') {
+                        margin-left: 1rem;
+                        min-width: 40px;
+                        height: 40px;
+                    }
+                    @include media('<=tablet') {
+                        margin-left: 1rem;
+                        min-width: 40px;
+                        height: 40px;
+                    }
+                    @include media('>tablet', '<desktop') {
                         margin-left: 1rem;
                         min-width: 40px;
                         height: 40px;
@@ -151,6 +226,16 @@
                     margin-left: 2rem;
                     margin-right: 8rem;
                     @include media('<=phone') {
+                        font-size: 19px;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                    }
+                    @include media('<=tablet') {
+                        font-size: 19px;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                    }
+                    @include media('>tablet', '<desktop') {
                         font-size: 19px;
                         margin-left: 1rem;
                         margin-right: 1rem;
@@ -179,6 +264,17 @@
                         margin-left: 0px;
                         margin-top: 3rem;
                     }
+                    @include media('<=tablet') {
+                        height: 300px;
+                        transform: translateY(0px);
+                        margin-left: 1.5rem;
+                    }
+                    @include media('>tablet', '<desktop') {
+                        height: 300px;
+                        transform: translateY(0px);
+                        margin-left: 1.5rem;
+                    }
+                    
                 }
             }
         }
@@ -200,6 +296,13 @@
                     margin-top: 3rem;
                     margin-bottom: 1rem;
                 }
+                @include media('<=tablet') {
+                    margin-top: 1.8rem;
+                }
+                @include media('>tablet', '<desktop') {
+                    margin-top: 1rem;
+                }
+    
 
                 .number {
                     margin-left: 8rem;
@@ -216,10 +319,26 @@
                         @include media('<=phone') {
                             font-size: 28px;
                         }
+                        @include media('<=tablet') {
+                            font-size: 28px;
+                        }
+                        @include media('>tablet', '<desktop') {
+                            font-size: 28px;
+                        }
                     }
 
                     @include media('<=phone') {
                         margin-left: 1rem;
+                        min-width: 40px;
+                        height: 40px;
+                    }
+                    @include media('<=tablet') {
+                        margin-left: 1.5rem;
+                        min-width: 40px;
+                        height: 40px;
+                    }
+                    @include media('>tablet', '<desktop') {
+                        margin-left: 1.5rem;
                         min-width: 40px;
                         height: 40px;
                     }
@@ -231,6 +350,16 @@
                     @include media('<=phone') {
                         font-size: 19px;
                         margin-left: 1rem;
+                    }
+                    @include media('<=tablet') {
+                        font-size: 19px;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
+                    }
+                    @include media('>tablet', '<desktop') {
+                        font-size: 19px;
+                        margin-left: 1rem;
+                        margin-right: 1rem;
                     }
                 }
             }
@@ -254,6 +383,14 @@
                         height: 250px;
                         margin-right: 0px;
                         transform: translateY(0px);
+                    }
+                    @include media('<=tablet') {
+                        height: 300px;
+                        margin-right: 1.5rem;
+                    }
+                    @include media('>tablet', '<desktop') {
+                        height: 300px;
+                        margin-right: 1.5rem;
                     }
                 }
             }

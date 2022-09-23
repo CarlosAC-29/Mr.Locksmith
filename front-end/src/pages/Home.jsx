@@ -23,7 +23,7 @@ export default function Home() {
 				<div className='landing__text'>
 					<h1> We have more than 20 years of experience</h1>
 					<a href="tel://+801-819-1031">
-						<button className='btn__callnow'><span>Call now</span><br /><FaPhoneAlt /> 801-819-1031</button>
+						<button className='btn__callnow'><span>Call now</span><br/><FaPhoneAlt /> 801-819-1031</button>
 					</a>
 				</div>
 			</div>
@@ -69,7 +69,7 @@ export default function Home() {
 			<div className='callnow__section'>
 				<img src={utah} alt='jpg' />
 				<div className='callnow__section__info'>
-					<p>We operate 7 days <br /> a week for any <br /> emergency</p>
+					<p>We operate 7 days a week for any emergency</p>
 					<a href="tel://+801-819-1031">
 						<button>Call now</button>
 					</a>
