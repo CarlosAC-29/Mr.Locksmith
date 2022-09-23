@@ -3,15 +3,17 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 75px;
     position: relative;
-    margin-left: 20px;
 
-	@include media('<=tablet') {
 
-	}
+
+    @include media('>tablet' , '<desktop'){
+        margin: 0;
+        margin-left: 10px;
+    }
 
 
     &__logo {
@@ -40,7 +42,6 @@
     &__links {
         display: flex;
         justify-content: flex-end;
-        list-style: none;
         width: 100%;
 
         @include media('<=tablet') {
@@ -57,12 +58,13 @@
             border: none;
             background-color: #fff;
             color: $secondary;
-            font-size: 17px;
+            font-size: 18px;
             padding: 10px 20px; 
             cursor: pointer;
             border-radius: 30px;
-            margin: 0 10px;
+            margin: 0 26px;
             transition: all 0.2s ease-in;
+            font-family: 'Poppins', sans-serif;
 
             &:hover{
                 background-color: $secondary;
@@ -78,6 +80,11 @@
                 margin: 50px 0;
                 padding: 0;
 
+            }
+
+            @include media('>tablet' , '<desktop'){
+                margin: 0 5px;
+                font-size: 15px;
             }
         }
     }

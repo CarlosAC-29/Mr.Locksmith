@@ -3,12 +3,14 @@ import './styles/Home.scss';
 import landingImage from '../images/MainPage.jpg';
 import ServiceCard from '../components/ServiceCard';
 import WhyChooseUs from '../components/WhyChooseUs';
+import utah from '../images/mountains.jpg';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa';
 import { AiFillAlert } from 'react-icons/ai';
 import { SiHomeassistantcommunitystore } from 'react-icons/si';
 import { FaCar } from 'react-icons/fa';
 import { BsSafeFill } from 'react-icons/bs';
+import { FaAward } from 'react-icons/fa';
 
 export default function Home() {
 
@@ -24,6 +26,10 @@ export default function Home() {
 						<button className='btn__callnow'><span>Call now</span><br /><FaPhoneAlt /> 801-819-1031</button>
 					</a>
 				</div>
+			</div>
+			<div className='tag__section'>
+				<FaAward />
+				<p>Realiable, professional & excellent service </p>
 			</div>
 			<div className='services__section'>
 				<h1>Our Services</h1>
@@ -61,15 +67,13 @@ export default function Home() {
 			</div>
 			<WhyChooseUs />
 			<div className='callnow__section'>
-				<p>We operate 7 days <br /> a week for any <br /> emergency</p>
-				<a href="tel://+801-819-1031">
-					<button>Call now</button>
-				</a>
-				<div className='circle'></div>
-				<div className='circle_1'></div>
-				<div className='circle_2'></div>
-				<div className='circle_3'></div>
-				<div className='circle_4'></div>
+				<img src={utah} alt='jpg' />
+				<div className='callnow__section__info'>
+					<p>We operate 7 days <br /> a week for any <br /> emergency</p>
+					<a href="tel://+801-819-1031">
+						<button>Call now</button>
+					</a>
+				</div>
 			</div>
 		</div>
 	)

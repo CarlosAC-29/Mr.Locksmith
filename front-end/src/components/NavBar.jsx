@@ -19,7 +19,7 @@ export default function Navbar() {
 					</button>
 					<CustomLink to="/">Home</CustomLink>
 					<CustomLink to="/services">Services</CustomLink>
-					<CustomLink to="/locations">Locations</CustomLink>
+					<CustomLink to="/locations">Service areas</CustomLink>
 					<CustomLink to="/contact-us">Contact us</CustomLink>
 				</nav>
 			</div>
