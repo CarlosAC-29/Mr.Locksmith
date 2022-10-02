@@ -34,7 +34,7 @@ export default function Locations() {
       <div className="row">
         <div className="cityBorder">
           <div className="title">
-            <h2><IoLocationSharp className="icon"/>Locations</h2>
+            <h2><IoLocationSharp className="icon"/>Areas</h2>
           </div>
           <div className="cityButtons">
             <ul>
