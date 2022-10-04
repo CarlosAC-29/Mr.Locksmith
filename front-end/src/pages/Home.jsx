@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/Home.scss';
-import landingImage from '../images/MainPage.jpg';
+import landingImage from '../images/MainPage.png';
 import ServiceCard from '../components/ServiceCard';
 import WhyChooseUs from '../components/WhyChooseUs';
 import utah from '../images/mountains.jpg';
@@ -17,11 +17,11 @@ export default function Home() {
 	return (
 		<div className='page'>
 			<div className='landing__section'>
-				<div>
+				<div className='image'>
 					<img src={landingImage} alt='home' />
 				</div>
 				<div className='landing__text'>
-					<h1> We have more than 20 years of experience</h1>
+					<h1>We have more than 20 years of experience</h1>
 					<a href="tel://+801-819-1031">
 						<button className='btn__callnow'><span>Call now</span><br/><FaPhoneAlt /> 801-819-1031</button>
 					</a>

@@ -14,19 +14,17 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        top: 32px;
+        background-color: #5418CB;
+        height: 500px;
 
         .landing__text {
-            position: absolute;
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            padding: 30px 0;
-            background-color: rgba(54, 40, 81, 0.8);
+            align-items: flex-start;
             font-weight: 400;
-
+            
 
             @include media('<=tablet') {
                 height: 350px;
@@ -45,25 +43,75 @@
             h1 {
                 color: $primary;
                 font-size: 50px;
-                margin: 40px 20px;
+                margin: 10px 0px;
+                max-width: 45rem;
+                text-align: center;
+                position: relative;
+                top: -20px;
 
                 @include media('<=tablet') {
                     font-size: 40px;
                     text-align: center;
                 }
             }
-        }
 
-        img {
-            position: relative;
-            width: 100%;
-
-            @include media('<=tablet') {
-                width: 100%;
-                height: 400px;
-                margin-top: 120px;
+            .btn__callnow {
+                border-radius: 25px;
+                padding: 1em 2em;
+                background: linear-gradient(117deg, rgb(62, 22, 142), rgb(62, 22, 100));
+                border: none;
+                color: rgb(255, 255, 255);
+                font-size: 1.5rem;
+                cursor: pointer;
+                transition: box-shadow 0.25s ease 0s;
+                transition: all .2s ease-in-out;
+                letter-spacing: 0.08rem;
+                white-space: initial;
+                margin-left: 220px;
+            
+                @include media('<=tablet') {
+                    font-size: 1.1rem;
+                }
+            
+            
+            
+                span {
+                    font-weight: 500;
+                    font-size: 2.5rem;
+            
+                    @include media('<=tablet') {
+                        font-size: 1.1rem;
+                    }
+            
+                    @include media('>tablet', '<desktop') {
+                        font-size: 1.5rem;
+                        width: 12em;
+                    }
+                }
+            
+                &:hover {
+                    background: linear-gradient(117deg, rgb(62, 22, 160), rgb(62, 22, 130));
+                    box-shadow: 0 0.1rem 0.8rem rgb(62, 22, 130);
+                    transform: scale(1.1);
+                }
+            
             }
         }
+
+        .image{
+            width: 100%;
+            height: 100%;
+            img{
+                height: 100%;
+                width: 100%;
+                @include media('<=laptop') {
+                    position: relative;
+                    top: -20px;
+                }
+            }
+        }
+
+
     }
 
     .tag__section {
@@ -247,48 +295,6 @@
             }
 
         }
-    }
-
-}
-
-//Button landing section
-.btn__callnow {
-    border-radius: 25px;
-    padding: 1em 2em;
-    background: linear-gradient(117deg, rgb(62, 22, 142), rgb(62, 22, 100));
-    border: none;
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: box-shadow 0.25s ease 0s;
-    transition: all .2s ease-in-out;
-    letter-spacing: 0.08rem;
-    white-space: initial;
-
-    @include media('<=tablet') {
-        font-size: 1.1rem;
-    }
-
-
-
-    span {
-        font-weight: 500;
-        font-size: 2.5rem;
-
-        @include media('<=tablet') {
-            font-size: 1.1rem;
-        }
-
-        @include media('>tablet', '<desktop') {
-            font-size: 1.5rem;
-            width: 12em;
-        }
-    }
-
-    &:hover {
-        background: linear-gradient(117deg, rgb(62, 22, 160), rgb(62, 22, 130));
-        box-shadow: 0 0.1rem 0.8rem rgb(62, 22, 130);
-        transform: scale(1.1);
     }
 
 }
