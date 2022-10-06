@@ -28,12 +28,9 @@
             align-items: center;
             justify-content: center;
         }
-        @include media('>=XL') {
-            padding-left: 130px;
-        }
 
         .landing__text {
-            width: 100%;
+            width: 45%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -125,11 +122,12 @@
             }
         }
 
+            
             img{
                 height: 100%;
                 width: 100%;
                 @include media('<=phone') {
-                    height: 300px;
+                    height: 300px !important;
                     position: relative;
                     left: -15px;
                 }
@@ -142,17 +140,19 @@
                     position: relative;
                     left: -30px;
                 }
-                @include media('>laptop') {
-                    position: relative;
-                    top: -20px;
-                    width: 50rem;
-                }
                 @include media('<=laptop') {
                     position: relative;
                     top: -20px;
                 }
+                @include media('>laptop') {
+                    position: relative;
+                    top: -20px;
+                    width: 45rem;
+                }
+                @include media('>XL') {
+                    margin-left: 100px;
+                }
             }
-
 
     }
 

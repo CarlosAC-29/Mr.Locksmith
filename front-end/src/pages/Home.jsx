@@ -17,7 +17,9 @@ export default function Home() {
 	return (
 		<div className='page'>
 			<div className='landing__section'>
-				<img src={landingImage} alt='home' />
+				<div>
+					<img src={landingImage} alt='home' />
+				</div>
 				<div className='landing__text'>
 					<h1>We have more than 20 years of experience</h1>
 					<a href="tel://+801-819-1031">
