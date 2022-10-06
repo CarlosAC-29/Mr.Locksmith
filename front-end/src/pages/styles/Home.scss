@@ -14,7 +14,7 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        background-color: #5418CB;
+        background-color: #603091;
         height: 500px;
 
         @include media('<=tablet') {
@@ -77,9 +77,9 @@
             .btn__callnow {
                 border-radius: 25px;
                 padding: 1em 2em;
-                background: linear-gradient(117deg, rgb(62, 22, 142), rgb(62, 22, 100));
+                background: linear-gradient(117deg, rgb(249, 198, 77), rgb(255, 198, 66));
                 border: none;
-                color: rgb(255, 255, 255);
+                color: #5418CB;
                 font-size: 1.5rem;
                 cursor: pointer;
                 transition: box-shadow 0.25s ease 0s;
@@ -114,8 +114,8 @@
                 }
             
                 &:hover {
-                    background: linear-gradient(117deg, rgb(62, 22, 160), rgb(62, 22, 130));
-                    box-shadow: 0 0.1rem 0.8rem rgb(62, 22, 130);
+                    background: linear-gradient(117deg, rgb(255, 207, 96), rgb(255, 204, 86));
+                    box-shadow: 0 0.1rem 0.8rem rgb(255, 214, 118);
                     transform: scale(1.1);
                 }
             
@@ -162,7 +162,7 @@
         align-items: center;
         gap: 20px;
         font-size: 1.5rem;
-        background-color: $secondary;
+        background-color: #232222;
         color: $primary;
         position: relative;
         padding: 5px 0;
@@ -189,7 +189,7 @@
         }
 
         h1 {
-            color: $fontColor;
+            color: $secondary;
             font-size: 40px;
 
             @include media('<=tablet') {
