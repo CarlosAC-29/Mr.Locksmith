@@ -17,6 +17,21 @@
         background-color: #5418CB;
         height: 500px;
 
+        @include media('<=tablet') {
+            flex-direction: column;
+            height: 800px;
+            padding: 50px 0;
+        }
+        @include media('>tablet', '<desktop') {
+            flex-direction: column;
+            height: 750px;
+            align-items: center;
+            justify-content: center;
+        }
+        @include media('>=XL') {
+            padding-left: 130px;
+        }
+
         .landing__text {
             width: 100%;
             display: flex;
@@ -30,13 +45,13 @@
                 height: 350px;
                 top: 120px;
                 width: 100%;
+                align-items: center;
             }
-
             @include media('>tablet', '<desktop') {
-                height: 304px;
-                top: 75px;
-                text-align: center;
-                margin-top: 45px;
+                position: relative;
+                top: -80px;
+                align-items: center;
+                height: 500px;
             }
 
 
@@ -50,7 +65,14 @@
                 top: -20px;
 
                 @include media('<=tablet') {
+                    margin-bottom: 30px;
                     font-size: 40px;
+                    text-align: center;
+                }
+
+                @include media('>tablet', '<desktop') {
+                    font-size: 2rem;
+                    width: 100%;
                     text-align: center;
                 }
             }
@@ -70,7 +92,12 @@
                 margin-left: 220px;
             
                 @include media('<=tablet') {
-                    font-size: 1.1rem;
+                    font-size: 1.5rem;
+                    margin-left: 0;
+                }
+                @include media('>tablet', '<desktop') {
+                    font-size: 1.5rem;
+                    margin-left: 0;
                 }
             
             
@@ -80,11 +107,11 @@
                     font-size: 2.5rem;
             
                     @include media('<=tablet') {
-                        font-size: 1.1rem;
+                        font-size: 1.7rem;
                     }
             
                     @include media('>tablet', '<desktop') {
-                        font-size: 1.5rem;
+                        font-size: 1.8rem;
                         width: 12em;
                     }
                 }
@@ -98,18 +125,33 @@
             }
         }
 
-        .image{
-            width: 100%;
-            height: 100%;
             img{
                 height: 100%;
                 width: 100%;
+                @include media('<=phone') {
+                    height: 300px;
+                    position: relative;
+                    left: -15px;
+                }
+                @include media('<=tablet') {
+                    height: 480px;
+                    position: relative;
+                    left: -15px;
+                }
+                @include media('>tablet', '<desktop') {
+                    position: relative;
+                    left: -30px;
+                }
+                @include media('>laptop') {
+                    position: relative;
+                    top: -20px;
+                    width: 50rem;
+                }
                 @include media('<=laptop') {
                     position: relative;
                     top: -20px;
                 }
             }
-        }
 
 
     }

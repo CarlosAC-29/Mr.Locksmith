@@ -24,9 +24,9 @@
 
 
     &__logo {
-        width: 180px;
+        width: 230px;
         @include media('<=tablet'){
-            width: 150px;
+            width: 250px;
             margin-left: 10px;
         }
     }

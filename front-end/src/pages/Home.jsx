@@ -17,13 +17,11 @@ export default function Home() {
 	return (
 		<div className='page'>
 			<div className='landing__section'>
-				<div className='image'>
-					<img src={landingImage} alt='home' />
-				</div>
+				<img src={landingImage} alt='home' />
 				<div className='landing__text'>
 					<h1>We have more than 20 years of experience</h1>
 					<a href="tel://+801-819-1031">
-						<button className='btn__callnow'><span>Call now</span><br/><FaPhoneAlt /> 801-819-1031</button>
+						<button className='btn__callnow'><span>Call now</span><br /><FaPhoneAlt /> 801-819-1031</button>
 					</a>
 				</div>
 			</div>
