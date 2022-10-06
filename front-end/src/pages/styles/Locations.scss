@@ -36,7 +36,7 @@
             margin-right: 2rem;
 
             .icon {
-                color: #3E168E;
+                color: $secondary;
             }
 
             .title {
@@ -55,7 +55,7 @@
                 }
 
                 button {
-                    background-color: #3E168E;
+                    background-color: $secondary;
                     color: white;
                     border: none;
                     text-align: center;
@@ -65,10 +65,11 @@
                     margin: 1em;
                     width: 140px;
                     height: 40px;
+                    transition: all 0.2s ease-in;
 
                     &:hover {
-                        background-color: white;
-                        color: #3E168E;
+                        background-color: #fff;
+                        color: $secondary;
                     }
                 }
 
