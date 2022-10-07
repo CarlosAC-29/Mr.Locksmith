@@ -7,7 +7,7 @@
 }
 
 .page {
-
+    background-color: #f7f9fe;
     //Landing section
     .landing__section {
         display: flex;
@@ -62,13 +62,15 @@
                 top: -20px;
 
                 @include media('<=tablet') {
-                    margin-bottom: 30px;
+                    margin-bottom: 80px;
                     font-size: 40px;
                     text-align: center;
                 }
 
                 @include media('>tablet', '<desktop') {
-                    font-size: 2rem;
+                    font-size: 2.5rem;
+                    top: -100px;
+                    bottom: 0px;
                     width: 100%;
                     text-align: center;
                 }
@@ -95,6 +97,7 @@
                 @include media('>tablet', '<desktop') {
                     font-size: 1.5rem;
                     margin-left: 0;
+                    margin-bottom: 90px;
                 }
             
             
@@ -134,11 +137,11 @@
                 @include media('<=tablet') {
                     height: 480px;
                     position: relative;
-                    left: -15px;
+                    left: 10px;
                 }
                 @include media('>tablet', '<desktop') {
                     position: relative;
-                    left: -30px;
+                    left: 20px;
                 }
                 @include media('<=laptop') {
                     position: relative;
@@ -146,8 +149,8 @@
                 }
                 @include media('>laptop') {
                     position: relative;
-                    top: -20px;
-                    width: 45rem;
+                    top: 20px;
+                    width: 52rem;
                 }
                 @include media('>XL') {
                     margin-left: 100px;
@@ -182,10 +185,11 @@
         justify-content: center;
         align-items: center;
         padding: 100px 10px;
-        background-color: #F7F9FE;
+        background-color: #f7f9fe;
+        width: 100%;
 
         @include media('<=tablet') {
-            padding: 0px 10px;
+            padding: 0px 0px;
             transform: scale(0.9);
         }
 
