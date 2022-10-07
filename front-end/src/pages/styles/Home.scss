@@ -50,6 +50,9 @@
                 align-items: center;
                 height: 500px;
             }
+            @include media('>laptop') {
+                margin-right: 10px;
+            }
 
 
             h1 {
