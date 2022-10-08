@@ -30,7 +30,7 @@
         }
 
         .landing__text {
-            width: 45%;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -51,7 +51,6 @@
                 height: 500px;
             }
             @include media('>laptop') {
-                margin-right: 10px;
             }
 
 
@@ -106,6 +105,9 @@
                     margin-left: 0;
                     margin-bottom: 90px;
                 }
+                @include media('>media', '<laptop') {
+                    margin-left: 80px;
+                }
             
             
             
@@ -119,6 +121,10 @@
             
                     @include media('>tablet', '<desktop') {
                         font-size: 1.8rem;
+                        width: 12em;
+                    }
+                    @include media('>media', '<laptop') {
+                        font-size: 1.6rem;
                         width: 12em;
                     }
                 }
@@ -191,7 +197,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 100px 10px;
+        padding: 100px 0px;
         background-color: #f7f9fe;
         width: 100%;
 
