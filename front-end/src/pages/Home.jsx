@@ -54,7 +54,7 @@ export default function Home() {
 					<div className='service__line2'>
 						<ServiceCard
 							title='Automotive'
-							description='You got locked out of your? No worries, we have your back'
+							description='You got locked out of your car? No worries, we have your back'
 							icon={<FaCar />}
 						/>
 						<ServiceCard
