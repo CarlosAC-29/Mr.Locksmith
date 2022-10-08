@@ -3,8 +3,8 @@
 
 
 .Services__greetings {
-    background-color: $secondary;
-    color: $primary;
+    background-color: #165F96;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
-    gap: 100px;
+    gap: 150px;
     margin: 150px 0;
 
     @include media('<=tablet') {
@@ -48,7 +48,7 @@
     .Service__details {
         
         .Service__title{
-            color: $secondary;
+            color: #165F96;
             font-size: 2.6rem;
             font-weight: 600;          
         }
@@ -62,7 +62,7 @@
         .Service__subtitle {
             padding: 15px 0;
             font-size: 1.4rem;
-            color: $secondary;
+            color: #165F96;
             font-weight: 600;
         }
 
@@ -81,10 +81,11 @@
     align-items: center;
     flex-direction: row-reverse;
     padding: 30px;
-    gap: 100px;
+    gap: 150px;
     margin: 150px 0;
 
     @include media('<=tablet') {
+        gap: 50px;
         flex-direction: column;
     }
 
@@ -100,7 +101,7 @@
     .Service__details {
         
         .Service__title{
-            color: $secondary;
+            color: #165F96;
             font-size: 2.6rem;
             font-weight: 600;          
         }
@@ -114,7 +115,7 @@
         .Service__subtitle {
             padding: 15px 0;
             font-size: 1.4rem;
-            color: $secondary;
+            color: #165F96;
             font-weight: 600;
         }
 

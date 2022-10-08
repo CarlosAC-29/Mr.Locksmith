@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles/Home.scss';
-import landingImage from '../images/MainPage.png';
+import landingImage from '../images/LandingImage.png';
 import ServiceCard from '../components/ServiceCard';
 import WhyChooseUs from '../components/WhyChooseUs';
 import utah from '../images/mountains.jpg';

@@ -5,7 +5,7 @@
     @include flex(center, center, row);
     padding: 3rem 0rem;
     width: 100%;
-    background-color: #E2DDED;
+    background-color: #F7F9FE;
 
     .row {
         display: flex;
@@ -36,13 +36,14 @@
             margin-right: 2rem;
 
             .icon {
-                color: $secondary;
+                color: #165F96;
             }
 
             .title {
                 margin-bottom: 1em;
                 text-align: center;
-                color: #2C2A2A;
+                color: #323B42;
+
                 @include media('<=phone') {
                     margin-left: 1.2rem;
                 }
@@ -55,7 +56,7 @@
                 }
 
                 button {
-                    background-color: $secondary;
+                    background-color: #165F96;
                     color: white;
                     border: none;
                     text-align: center;
@@ -66,24 +67,27 @@
                     width: 140px;
                     height: 40px;
                     transition: all 0.2s ease-in;
+                    font-family: 'Poppins', sans-serif;
 
                     &:hover {
-                        background-color: #fff;
-                        color: $secondary;
+                        background-color: #84C8FB;
+                        color: #165F96;
                     }
                 }
 
                 ul {
                     list-style: none;
+
                     @include media('<=phone') {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
                     }
+
                     @include media('<=tablet') {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
                         justify-items: center;
-                        
+
                     }
                 }
             }
