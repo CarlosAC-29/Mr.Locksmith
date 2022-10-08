@@ -42,7 +42,7 @@ export default function Home() {
 						/>
 						<ServiceCard
 							title='Emergency Call  '
-							description="Do you need to access your home, car, safe, or gate? Dont sweat it, we will be there in no time"
+							description="Do you need to access your home, car, safe, or gate? Don't sweat it, we will be there in no time"
 							icon={<AiFillAlert />}
 						/>
 						<ServiceCard

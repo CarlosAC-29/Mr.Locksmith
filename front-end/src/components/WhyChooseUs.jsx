@@ -34,8 +34,8 @@ const WhyChooseUs = () => {
                         <h1>2</h1>
                     </div>
                     <p>We understand how frustrating it is
-                        to be locked out of your home or car,
-                        or to lose your keys or forget the
+                        to be locked out of your home, car,
+                        to lose your keys or forget the
                         code to your safe, but our outstanding
                         team of professionals have you covered
                         and will solve your problem right away</p>
